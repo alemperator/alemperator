@@ -1,0 +1,16 @@
+if($text){
+
+$SimSim = file_get_contents("https://ethanalhoor.gq/api/?Text=$text");
+
+bot('sendMessage',[
+
+'chat_id'=>$chat_id,
+
+'text'=>"$SimSim", 
+
+'reply_to_message_id'=>$message->message_id,
+
+]);
+
+}
+
